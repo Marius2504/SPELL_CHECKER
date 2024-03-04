@@ -10,11 +10,15 @@ The dataset consists of 456 Romanian texts with a total number of 180.000 unique
 ### Rules
 There are some grammerly rules implemented:
 - e-deletion:
-   * Stems that end in a silent e drop the e with certain suffixes (ing and ed in our case)
-- e-insertion: Whenever a stem ends in a sibilant and is followed by the plural morpheme s
-- y-replacement: The y-replacement rule which acts in constructions such as try → tries and try → tried
-- k-insertion: Verbs that end in a c (corresponding to a phonological k), add a k before the morpheme boundary if followed by an affix beginning with a vowel.
-- Consonant doubling: Like k-insertion, double final consonants in the stem in certain environments
+   * Stems that end in a silent e drop the e with certain suffixes (ing and ed in our case): <b>make → making</b>
+- e-insertion:
+  * Whenever a stem ends in a sibilant and is followed by the plural morpheme s: <b>watch → watches</b>
+- y-replacement:
+  * The y-replacement rule which acts when verb ends in y and is followed by morpheme boundary s: <b>try → tries</b>
+- k-insertion:
+  * Verbs that end in a c (corresponding to a phonological k), add a k before the morpheme boundary if followed by an affix beginning with a vowel: <b>panic → panicking</b>
+- Consonant doubling:
+  * Like k-insertion, double final consonants in the stem in certain environments: <b>beg → begging</b>
 
 ## HPF
 Hierarchical Poisson Factorization is a probabilistic approach used for collaborative filtering and matrix factorization tasks. It assumes a Poisson distribution for the observed data.
