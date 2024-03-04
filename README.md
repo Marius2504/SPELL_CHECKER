@@ -20,16 +20,5 @@ There are some grammerly rules implemented:
 - Consonant doubling:
   * Like k-insertion, double final consonants in the stem in certain environments: <b>beg → begging</b>
 
-## HPF
-Hierarchical Poisson Factorization is a probabilistic approach used for collaborative filtering and matrix factorization tasks. It assumes a Poisson distribution for the observed data.
-The implementation consists of 4 gamma-distributed variables that include user activity, preferences, popularity, and song attributes. The observed data, ratings, represent a Poisson distributed variable that combines the user’s preferences with the song’s attributes.
 
-## Hyperparameters 
-Starting value: 0.3. Adjusted based on the MSE score.
-MCMC steps based on Metropolis. The Metropolis algorithm is a basic form of the more general Metropolis-Hastings algorithm. 
-
-## :camera: Picture
-<p align="left">
- <img src="https://github.com/Marius2504/Music-Recommendation/blob/master/predicted_sgs.png" width="600">
-</p>
 
